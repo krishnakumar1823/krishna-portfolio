@@ -1,0 +1,289 @@
+@media (max-width:500px){
+	
+	.container{
+		padding: 0px !important;
+	}
+	#page0{
+		display:none;
+	}
+	.side-options-hover{
+		width: 20% !important;
+	}
+	.res-head-img{
+		display:flex;
+		align-items:center;
+	}
+	.res-head{
+		position:fixed;
+		top:0;
+		z-index:999;
+		margin: auto;
+	}
+	.li-type{
+		border-bottom:0px !important ;
+	}
+	.head{
+		display:flex;
+		justify-content:space-between;
+		margin: auto !important;
+	}
+	.words{
+		font-size: 15px !important;
+	}
+	.head::after{
+		content: '';
+		position: absolute;
+		left: 0px;
+		right: 0;
+		bottom: 0px;
+		height: 1px;
+		width: 100%;
+		background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+	}
+	.img-position{
+		position:absolute;
+		bottom:-20%;
+		left:35%;
+	}
+	.div1-bg{
+		height:100%!important;
+	}
+	.head,.div1-bg,.div2-bg,.div3-bg,.div4-bg,.div5-bg,.div6-bg{
+		border-radius: 0px !important;
+	}
+	.div2-bg,.div3-bg,.div4-bg,.div5-bg,.div6-bg{
+		margin: 42% 0% 0% 0%!important;
+		height:82vh!important;
+	}
+	.li-type{
+		padding: 18px 5px 0px 5px !important;
+	}
+	.moon-res{
+		text-align: end !important;
+	}
+	.res-padding-div3{
+		padding-top:15px;
+	}
+	.active{
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		display: block;
+	}
+	.hidden{
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9;
+		display:none;
+	}
+	.home{
+		transform-origin: center left;
+		transition: visibility 1s linear,opacity 0s linear;
+		z-index: 8;
+	}
+	.in{
+		animation-name: in;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		transform: translateY(-20px)
+	}
+	@keyframes in{
+		0% {
+			opacity: 0;
+			transform: translateY(-20px)
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0px)
+		}
+	}
+} 
+@media (min-width:500px){
+	
+	#page0{
+		display:none;
+	}
+	.res-head-img{
+		display:flex;
+		align-items:center;
+	}
+	.head{
+		display:flex;
+		justify-content:space-between;
+	}
+	.img-position{
+		position:absolute;
+		bottom:-20%;
+		left:35%;
+	}
+	.div1-bg{
+		height:100vh;
+	}
+	.li-type{
+		border-bottom:0px !important ;
+	}
+	.div2-bg,.div3-bg,.div4-bg,.div5-bg,.div6-bg{
+		margin-top: 2px!important; 
+		height:100vh;
+	}
+	.res-padding-div3{
+		padding-top:15px;
+	}
+	.active{
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		display: block;
+	}
+	.hidden{
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9;
+		display:none;
+	}
+	.home{
+		transform-origin: center left;
+		transition: visibility 1s linear,opacity 0s linear;
+		z-index: 8;
+	}
+	.in{
+		animation-name: in;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		transform: translateY(-20px)
+	}
+	@keyframes in{
+		0% {
+			opacity: 0;
+			transform: translateY(-20px)
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0px)
+		}
+	}
+}
+@media (min-width:992px){
+	#page0{
+		display:block;
+	}
+	.li-btn-clr{
+		display: block!important;
+	}
+	.res-head-img{
+		display:none!important;
+	}
+	.img-position{
+		position:absolute;
+		bottom:-20%;
+		left:25%;
+	}
+	.div1-bg{
+		height:70vh;
+	}
+	.div2-bg,.div3-bg,.div4-bg,.div5-bg,.div6-bg{
+		height:65vh;
+	}
+	.active{
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		display: block;
+	}
+	.hidden{
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9;
+		display:none;
+	}
+	.home{
+		transform-origin: center left;
+		transition: visibility 1s linear,opacity 0s linear;
+		z-index: 8;
+	}
+	.in{
+		transition: all .4s ease;
+		animation-name: in;
+		animation-duration: 2s;
+		animation-fill-mode: both;
+		transform: translateX(0px);
+
+	}
+	@keyframes in{
+		0% {
+			opacity: 0;
+			transform: translateX(-80%);
+		}
+		50% {
+			opacity: 1;
+			transform: translateX(05%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+	}
+}
+@media (min-width:1150px){
+	#page0{
+		display:block;
+	}
+	.li-btn-clr{
+		display: block!important;
+	}
+	.res-head-img{
+		display:none!important;
+	}
+	.img-position{
+		position:absolute;
+		bottom:-20%;
+		left:35%;
+	}
+	.div1-bg{
+		height:80vh;
+	}
+	.div2-bg,.div3-bg,.div4-bg,.div5-bg,.div6-bg{
+		height:75vh;
+	}
+	.active{
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		display: block;
+	}
+	.hidden{
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9;
+		display:none;
+	}
+	.home{
+		transform-origin: center left;
+		transition: visibility 1s linear,opacity 0s linear;
+		z-index: 8;
+	}
+	.in{
+		transition: all .4s ease;
+		animation-name: in;
+		animation-duration: 2s;
+		animation-fill-mode: both;
+		transform: translateX(0px);
+
+	}
+	@keyframes in{
+		0% {
+			opacity: 0;
+			transform: translateX(-80%);
+		}
+		50% {
+			opacity: 1;
+			transform: translateX(05%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+	}
+}
