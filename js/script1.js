@@ -249,7 +249,6 @@ project.addEventListener("click",function(e3){
 				{image:"image/stopwatch.png",cnt:"Stopwatch",link:"https://krishnakumar1823.github.io/js-stopwatch/",lang:"Html,Css,Js"},
 				{image:"image/mentor.png",cnt:"Mentor",link:"https://krishnakumar1823.github.io/Mentor/",lang:"Html,Css,Bootstrap"},
 				{image:"image/vesper.png",cnt:"Vesper",link:"https://krishnakumar1823.github.io/24th-may-task/",lang:"Html,Css"},
-				{image:"image/event.png",cnt:"Event",link:"https://krishnakumar1823.github.io/TheEvent/#Event-button1",lang:"Html,Css,Js,Bootstrap"},
 				{image:"image/groovin.png",cnt:"groovin",link:"https://krishnakumar1823.github.io/9th-june-task/",lang:"Html,Css,Js,Bootstrap"},
 				{image:"image/education.png",cnt:"Education",link:"https://krishnakumar1823.github.io/Education/",lang:"Html,Css,Js,Bootstrap"}
 			]
