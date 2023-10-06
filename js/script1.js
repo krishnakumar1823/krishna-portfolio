@@ -281,7 +281,7 @@ project.addEventListener("click",function(e3){
 			flipCardBack.setAttribute("class","flip-card-back")
 			
 			
-			imgSrc.setAttribute("style","height:200px;width:100%;border-radius:10px")
+			imgSrc.setAttribute("style","height:220px;width:100%;border-radius:10px")
 			imgSrc.setAttribute("src",array[i].image)
 			cnt.setAttribute("class","col-12")
 			cnt.innerHTML=`Task: ${array[i].cnt}`
@@ -335,7 +335,7 @@ contact.addEventListener("click",function(e4){
 		project1.setAttribute("class","col-12 col-md-12 col-lg-6 div5-bg home hidden")
 		contact1.setAttribute("class","col-12 col-md-12 col-lg-6 div6-bg home in active")
 				
-		var array1=[{cls:"./image/telephone.png",contact:"tel:+919787533778",text:"phone number",call:"9787533778"},{cls:"./image/email.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},{cls:"./image/github.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}]
+		var array1=[{cls:"./image/telephone.png",contact:"tel:+919787533778",text:"Phone number",call:"9787533778"},{cls:"./image/email.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},{cls:"./image/github.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}]
  
 		var contact1=document.getElementById("contact1")
 		contact1.setAttribute("class","col-12 col-md-12 col-lg-6 row div5-bg home in active")
@@ -353,7 +353,7 @@ contact.addEventListener("click",function(e4){
 		contactParent.setAttribute("class","col-12 row")
 		contactHeaddiv.appendChild(contactParent)
 		array1.map((val,ind)=>{
-			contactParent.innerHTML+=`<div class="col-6 px-2 my-2" style="min-height: 30vh;">
+			contactParent.innerHTML+=`<div class="col-12 col-md-6 px-2 my-2" style="min-height: 30vh;">
 				<div class="position-relative contact-div row justify-content-center align-items-center" style="cursor:pointer;border:1px solid #009688;border-radius:6px;width:100%;height:30vh;">
 					<div class="col-12 text-center">
 						<img src=${val.cls} width="50px" height="50px">
