@@ -3,7 +3,6 @@
 // 	letters=text[Math.floor(Math.random()*text.length)]
 // 	return letters
 // }
-
 // function rain(){
 // 	let cloud=document.querySelector('.cloud')
 // 	let e=document.createElement("div")
@@ -23,35 +22,34 @@
 // 		cloud.removeChild(e)
 // 	},1500)
 // }
-
 // setInterval(function(){
 // 	rain()
 // },100)
 
 
  
-	let options = {
-	  startAngle: -1.55,
-	  size: 150,
-	  value: 0.85,
-	  fill: {gradient: ['#009688','#00ffe5']}
-	}
-	$(".circle .bar").circleProgress(options).on('circle-animation-progress',
-	function(event, progress, stepValue){
-	  $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+let options = {
+	startAngle: -1.55,
+	size: 150,
+	value: 0.85,
+	fill: {gradient: ['#009688','#00ffe5']}
+}
+$(".circle .bar").circleProgress(options).on('circle-animation-progress',
+function(event, progress, stepValue){
+	$(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+});
+$(".html .bar").circleProgress({
+	value: 0.95
 	});
-	$(".html .bar").circleProgress({
-		value: 0.95
-	  });
-	$(".js .bar").circleProgress({
-	  value: 0.85
-	});
-	$(".bootstrap .bar").circleProgress({
-	  value: 0.90
-	});      
-	$(".react .bar").circleProgress({
-	  value: 0.80
-	});
+$(".js .bar").circleProgress({
+	value: 0.85
+});
+$(".bootstrap .bar").circleProgress({
+	value: 0.90
+});      
+$(".react .bar").circleProgress({
+	value: 0.80
+});
 
 
 
@@ -68,7 +66,9 @@ var change_two=document.getElementById("change2")
 var change_three=document.getElementById("change3")
 var change_four=document.getElementById("change4")
 var changeIcon=document.getElementById("changeIcon")
+ 
 
+//buttuon-1
 var changeCount=0
 var color_btn=document.getElementById("color_btn")
 color_btn.addEventListener("click",function(){
@@ -83,15 +83,67 @@ color_btn.addEventListener("click",function(){
 		changeIcon.setAttribute("class","bi bi-brightness-high py-3 d-inline-block")
 		project1.setAttribute("style","z-index: 0;background-color: #1d252c!important;color: white !important;")
 		contact1.setAttribute("style","z-index: 0;background-color: #1d252c!important;color: white !important;")
+
+		var contact_card=document.getElementById("contactCardParent")
+		contact_card.innerHTML=""
+
+		var array1=[
+			{cls:"./image/telephone1.png",contact:"tel:+919787533778",text:"phone number",call:"9787533778"},
+			{cls:"./image/email1.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},
+			{cls:"./image/github1.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}
+		]
+		 
+		array1.map((val,ind)=>{
+		contact_card.innerHTML+=`<div class="col-6 px-2 my-2" style="min-height: 30vh;">
+			<div class="position-relative contact-div row justify-content-center align-items-center" style="cursor:pointer;border:1px solid #009688;border-radius:6px;width:100%;height:30vh;">
+				<div class="col-12 text-center">
+					<img src=${val.cls} width="50px" height="50px">
+					<h6 class="py-2">${val.text}</h6>
+				</div>
+				<div class="contact-content-color text-center">
+					<div class="contact-content-transform">
+						<a href=${val.contact}>${val.call}</a>
+					</div>
+				</div>
+			</div>
+		</div>`
+		})
 	}
 	else{
 		changeIcon.setAttribute("class","bi bi-moon py-3 d-inline-block")
 		project1.setAttribute("style","z-index: 0;background-color: white!important;color: black !important;")
 		contact1.setAttribute("style","z-index: 0;background-color: white!important;color: black !important;")
+
+		var contact_card=document.getElementById("contactCardParent")
+		contact_card.innerHTML=""
+
+		var array1=[
+			{cls:"./image/telephone.png",contact:"tel:+919787533778",text:"phone number",call:"9787533778"},
+			{cls:"./image/email.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},
+			{cls:"./image/github.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}
+		]
+		 
+		array1.map((val,ind)=>{
+		contact_card.innerHTML+=`<div class="col-6 px-2 my-2" style="min-height: 30vh;">
+			<div class="position-relative contact-div row justify-content-center align-items-center" style="cursor:pointer;border:1px solid #009688;border-radius:6px;width:100%;height:30vh;">
+				<div class="col-12 text-center">
+					<img src=${val.cls} width="50px" height="50px">
+					<h6 class="py-2">${val.text}</h6>
+				</div>
+				<div class="contact-content-color text-center">
+					<div class="contact-content-transform">
+						<a href=${val.contact}>${val.call}</a>
+					</div>
+				</div>
+			</div>
+		</div>`
+		})
 	}
 	
 })
 
+
+//buttuon-2
 var changeIcon2=document.getElementById("changeIcon2")
 var color_btn=document.getElementById("color_btn_1")
 color_btn.addEventListener("click",function(){
@@ -106,11 +158,60 @@ color_btn.addEventListener("click",function(){
 		changeIcon2.setAttribute("class","bi bi-brightness-high py-3 d-inline-block")
 		project1.setAttribute("style","z-index: 0;background-color: #1d252c!important;color: white !important;")
 		contact1.setAttribute("style","z-index: 0;background-color: #1d252c!important;color: white !important;")
+
+		var contact_card=document.getElementById("contactCardParent")
+		contact_card.innerHTML=""
+
+		var array1=[
+			{cls:"./image/telephone1.png",contact:"tel:+919787533778",text:"phone number",call:"9787533778"},
+			{cls:"./image/email1.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},
+			{cls:"./image/github1.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}
+		]
+		 
+		array1.map((val,ind)=>{
+		contact_card.innerHTML+=`<div class="col-6 px-2 my-2" style="min-height: 30vh;">
+			<div class="position-relative contact-div row justify-content-center align-items-center" style="cursor:pointer;border:1px solid #009688;border-radius:6px;width:100%;height:30vh;">
+				<div class="col-12 text-center">
+					<img src=${val.cls} width="50px" height="50px">
+					<h6 class="py-2">${val.text}</h6>
+				</div>
+				<div class="contact-content-color text-center">
+					<div class="contact-content-transform">
+						<a href=${val.contact}>${val.call}</a>
+					</div>
+				</div>
+			</div>
+		</div>`
+		})
 	}
 	else{
 		changeIcon2.setAttribute("class","bi bi-moon py-3 d-inline-block")
 		project1.setAttribute("style","z-index: 0;background-color: white!important;color: black !important;")
 		contact1.setAttribute("style","z-index: 0;background-color: white!important;color: black !important;")
+
+		var contact_card=document.getElementById("contactCardParent")
+		contact_card.innerHTML=""
+
+		var array1=[
+			{cls:"./image/telephone.png",contact:"tel:+919787533778",text:"phone number",call:"9787533778"},
+			{cls:"./image/email.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},
+			{cls:"./image/github.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}
+		]
+		array1.map((val,ind)=>{
+		contact_card.innerHTML+=`<div class="col-6 px-2 my-2" style="min-height: 30vh;">
+			<div class="position-relative contact-div row justify-content-center align-items-center" style="cursor:pointer;border:1px solid #009688;border-radius:6px;width:100%;height:30vh;">
+				<div class="col-12 text-center">
+					<img src=${val.cls} width="50px" height="50px">
+					<h6 class="py-2">${val.text}</h6>
+				</div>
+				<div class="contact-content-color text-center">
+					<div class="contact-content-transform">
+						<a href=${val.contact}>${val.call}</a>
+					</div>
+				</div>
+			</div>
+		</div>`
+		})
 	}
 	
 })
@@ -249,6 +350,7 @@ project.addEventListener("click",function(e3){
 				{image:"image/stopwatch.png",cnt:"Stopwatch",link:"https://krishnakumar1823.github.io/js-stopwatch/",lang:"Html,Css,Js"},
 				{image:"image/mentor.png",cnt:"Mentor",link:"https://krishnakumar1823.github.io/Mentor/",lang:"Html,Css,Bootstrap"},
 				{image:"image/vesper.png",cnt:"Vesper",link:"https://krishnakumar1823.github.io/24th-may-task/",lang:"Html,Css"},
+				{image:"image/event.png",cnt:"Event",link:"https://krishnakumar1823.github.io/TheEvent/#Event-button1",lang:"Html,Css,Js,Bootstrap"},
 				{image:"image/groovin.png",cnt:"groovin",link:"https://krishnakumar1823.github.io/9th-june-task/",lang:"Html,Css,Js,Bootstrap"},
 				{image:"image/education.png",cnt:"Education",link:"https://krishnakumar1823.github.io/Education/",lang:"Html,Css,Js,Bootstrap"}
 			]
@@ -280,7 +382,7 @@ project.addEventListener("click",function(e3){
 			flipCardBack.setAttribute("class","flip-card-back")
 			
 			
-			imgSrc.setAttribute("style","height:220px;width:100%;border-radius:10px")
+			imgSrc.setAttribute("style","height:200px;width:100%;border-radius:10px")
 			imgSrc.setAttribute("src",array[i].image)
 			cnt.setAttribute("class","col-12")
 			cnt.innerHTML=`Task: ${array[i].cnt}`
@@ -334,8 +436,6 @@ contact.addEventListener("click",function(e4){
 		project1.setAttribute("class","col-12 col-md-12 col-lg-6 div5-bg home hidden")
 		contact1.setAttribute("class","col-12 col-md-12 col-lg-6 div6-bg home in active")
 				
-		var array1=[{cls:"./image/telephone.png",contact:"tel:+919787533778",text:"Phone number",call:"9787533778"},{cls:"./image/email.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},{cls:"./image/github.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}]
- 
 		var contact1=document.getElementById("contact1")
 		contact1.setAttribute("class","col-12 col-md-12 col-lg-6 row div5-bg home in active")
 
@@ -350,9 +450,16 @@ contact.addEventListener("click",function(e4){
 
 		var contactParent=document.createElement("div")
 		contactParent.setAttribute("class","col-12 row")
+		contactParent.setAttribute("id","contactCardParent")
 		contactHeaddiv.appendChild(contactParent)
+
+		var array1=[
+			{cls:"./image/telephone.png",contact:"tel:+919787533778",text:"phone number",call:"9787533778"},
+			{cls:"./image/email.png",contact:"mailto:kumarkrishna11231@gmail.com",text:"Mail id",call:"kumarkrishna11231@gmail"},
+			{cls:"./image/github.png",contact:"https://github.com/krishnakumar1823",text:"Github id",call:"https://github.com/krishnakumar1823"}
+		]
 		array1.map((val,ind)=>{
-			contactParent.innerHTML+=`<div class="col-12 col-md-6 px-2 my-2" style="min-height: 30vh;">
+			contactParent.innerHTML+=`<div class="col-6 px-2 my-2" style="min-height: 30vh;">
 				<div class="position-relative contact-div row justify-content-center align-items-center" style="cursor:pointer;border:1px solid #009688;border-radius:6px;width:100%;height:30vh;">
 					<div class="col-12 text-center">
 						<img src=${val.cls} width="50px" height="50px">
@@ -366,43 +473,5 @@ contact.addEventListener("click",function(e4){
 				</div>
 			</div>`
 		})
-		for(var i=0;i<array1.length;i++){
-			
-			// var flipCard=document.createElement("div")
-			// flipCard.setAttribute("id","contact_card") 
-			// var flipCardFront=document.createElement("div")
-			// var imgtag=document.createElement("img")
-			// var flipCardBack=document.createElement("div")
-			// var cnt=document.createElement("h6") 
-			// var cnt1=document.createElement("p") 
-			// var websiteLink=document.createElement("a")
-		
-			
-			// flipCard.setAttribute("class","row col-12 col-md-6 col-lg-6 p-4")
-			// flipCardFront.setAttribute("class","row align-items-center justify-content-center position-relative")
-			// flipCardBack.setAttribute("class","flip-card-hover row")
-			
-			
-			// imgtag.setAttribute("style","height:94px;width:94px;border-radius:10px")
-			// imgtag.setAttribute("src",array1[i].cls)
-			
-			// cnt.setAttribute("class","col-12")
-			// cnt.innerHTML=array1[i].text,"<br>"
-			// cnt1.innerHTML=array1[i].call,"<br>"
-			// cnt1.setAttribute("style","display:block")
-			// cnt1.setAttribute("class","col-12")
-			// websiteLink.innerHTML="<br> link"
-			// websiteLink.setAttribute("class","bi bi-link")
-			// websiteLink.setAttribute("href",array1[i].contact)
-			// websiteLink.setAttribute("style","color:white;display:block;")
-			
-			// contact1.appendChild(flipCard)
-			// flipCard.appendChild(flipCardFront) 
-			// flipCardFront.appendChild(imgtag)
-			// flipCard.appendChild(flipCardBack)
-			// flipCardBack.appendChild(cnt)
-			// flipCardBack.appendChild(cnt1)
-			// flipCardBack.appendChild(websiteLink)
-		}
 	}
 })
